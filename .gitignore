@@ -1,0 +1,21 @@
+# --- 数据目录 (太大，不传) ---
+/data/
+/dataset/
+
+# --- 模型输出与采样 (权重文件非常大，不传) ---
+/lucky_clover_model/
+/samples/
+/final_results/
+
+# --- Python 缓存与系统文件 ---
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.ipynb_checkpoints/
+
+# --- 虚拟环境 (如果有) ---
+venv/
+env/
+.env
+
