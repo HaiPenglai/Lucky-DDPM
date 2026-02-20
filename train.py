@@ -75,8 +75,7 @@ def train():
         ),
     )
 
-    # ！！重要！！针对 5090 关闭梯度检查点，提升训练速度
-    # model.enable_gradient_checkpointing() 
+    model.enable_gradient_checkpointing() 
 
     noise_scheduler = DDPMScheduler(num_train_timesteps=1000)
     optimizer = torch.optim.AdamW(model.parameters(), lr=config.learning_rate)
