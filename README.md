@@ -262,7 +262,7 @@ api.upload_folder(
 print(f"全部任务尝试完成！请访问: https://huggingface.co/datasets/{repo_id}")
 ```
 
-![image-20260221123725377](./assets/image-20260221123725377.png)
+![image-20260221124918831](./assets/image-20260221124918831.png)
 
 ## 附录
 
