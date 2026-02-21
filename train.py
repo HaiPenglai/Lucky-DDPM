@@ -75,6 +75,7 @@ def train():
         ),
     )
 
+    # 启用梯度检查点，减少显存占用
     model.enable_gradient_checkpointing() 
 
     noise_scheduler = DDPMScheduler(num_train_timesteps=1000)
@@ -167,8 +168,8 @@ def train():
                 latest_path = os.path.join(config.output_dir, "latest")
                 pipeline.save_pretrained(latest_path)
                 
-                print(f"🎉 模型已更新至: {latest_path}")
-                print(f"💾 备份权重已保存: {checkpoint_path}")
+                print(f"模型已更新至: {latest_path}")
+                print(f"备份权重已保存: {checkpoint_path}")
 
     print("所有训练任务已完成！")
 
